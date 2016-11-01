@@ -28,7 +28,7 @@ function asCurrency(val)
 }
 function calculateReceipt()
 {
-  var receiptSubtotal = getCookie(preTax);
+  var receiptSubtotal = getCookie("preTax");
   receiptSubtotal = Number(receiptSubtotal);
   window.alert(receiptSubtotal);
   var receiptTax = receiptSubtotal * 0.075;
